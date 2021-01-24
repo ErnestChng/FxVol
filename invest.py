@@ -45,7 +45,7 @@ def get_fx_db():
     return fx_database
 
 
-# filehandler = open("fx_db.obj","wb")
+# filehandler = open("data/fx_db.obj","wb")
 # pickle.dump(get_fx_db(),filehandler)
 # filehandler.close()
 
@@ -97,4 +97,4 @@ for inst in instruments:
     df["{} BB_dn".format(inst)] = bband["BB_dn"]
 
 print(df)
-df.to_excel("df.xlsx")
+df.to_csv('data/df.csv')
