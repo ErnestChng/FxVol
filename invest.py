@@ -51,7 +51,7 @@ def get_fx_db():
 
 # exit()
 
-file = open("fx_db.obj", 'rb')
+file = open("data/fx_db.obj", 'rb')
 fx_db = pickle.load(file)
 file.close()
 
